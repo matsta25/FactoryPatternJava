@@ -12,9 +12,7 @@ package factorypatternjava;
 public class AnimalFactory {
     
     public Animal getAnimal( EnumType.AnimalType animalType ){
-        if(animalType == null){
-            return null;
-        }
+        
         if(animalType.equals(EnumType.AnimalType.dog)){
             return new Dog();
         }
