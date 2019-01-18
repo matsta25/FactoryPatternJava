@@ -10,5 +10,5 @@ package factorypatternjava;
  * @author mastanczak
  */
 public interface Animal {
-    String speek();
+    String speak();
 }

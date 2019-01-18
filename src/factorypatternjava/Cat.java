@@ -12,7 +12,7 @@ package factorypatternjava;
 public class Cat implements Animal {
     
     @Override
-    public String speek(){
+    public String speak(){
         return "Miau miau miau!";
     }
     

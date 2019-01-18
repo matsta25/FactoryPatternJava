@@ -15,15 +15,17 @@ public class FactoryPatternJava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         AnimalFactory animalFactory = new AnimalFactory();
         
         run(animalFactory.getAnimal(EnumType.AnimalType.dog));
         run(animalFactory.getAnimal(EnumType.AnimalType.cat));
         run(animalFactory.getAnimal(EnumType.AnimalType.bear));
+        
     }
     
     public static void run(Animal animal){
-        System.out.println(animal.speek());
+        System.out.println(animal.speak());
     }
     
 }
