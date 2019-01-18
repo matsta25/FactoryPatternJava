@@ -17,9 +17,9 @@ public class FactoryPatternJava {
     public static void main(String[] args) {
         AnimalFactory animalFactory = new AnimalFactory();
         
-        run(animalFactory.getAnimal("dog"));
-        run(animalFactory.getAnimal("cat"));
-        run(animalFactory.getAnimal("bear"));
+        run(animalFactory.getAnimal(EnumType.AnimalType.dog));
+        run(animalFactory.getAnimal(EnumType.AnimalType.cat));
+        run(animalFactory.getAnimal(EnumType.AnimalType.bear));
     }
     
     public static void run(Animal animal){

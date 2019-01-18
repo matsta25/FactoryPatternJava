@@ -11,17 +11,17 @@ package factorypatternjava;
  */
 public class AnimalFactory {
     
-    public Animal getAnimal( String animalType ){
+    public Animal getAnimal( EnumType.AnimalType animalType ){
         if(animalType == null){
             return null;
         }
-        if(animalType.equals("dog")){
+        if(animalType.equals(EnumType.AnimalType.dog)){
             return new Dog();
         }
-        if(animalType.equals("cat")){
+        if(animalType.equals(EnumType.AnimalType.cat)){
             return new Cat();
         }
-        if(animalType.equals("bear")){
+        if(animalType.equals(EnumType.AnimalType.bear)){
             return new Bear();
         }
         
